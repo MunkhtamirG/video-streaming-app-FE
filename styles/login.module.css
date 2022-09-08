@@ -1,0 +1,70 @@
+.back {
+  background-color: #24c0ad;
+}
+.h1 {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 3em;
+  display: flex;
+  width: 100vw;
+  margin-top: 100px;
+  justify-content: center;
+  font-family: "Architects Daughter", cursive;
+  position: absolute;
+  text-shadow: 2px 2px 10px #24c0ad;
+}
+.bg2 {
+  color: white !important;
+  width: 30vw;
+}
+.bg {
+  z-index: 1;
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-right: 1px solid rgba(255, 255, 255, 0.01);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.01);
+  backdrop-filter: blur(25px);
+  border-radius: 10px;
+  padding: 40px;
+  color: white;
+}
+
+.bg1 {
+  background-color: #006c6e;
+  clip-path: polygon(
+    0 100%,
+    0 0,
+    100% 0,
+    100% 30%,
+    97% 47%,
+    83% 55%,
+    83% 71%,
+    64% 74%,
+    56% 85%,
+    38% 85%,
+    27% 96%,
+    13% 93%
+  );
+  animation: polygons 30s infinite;
+}
+@keyframes polygons {
+  50% {
+    clip-path: polygon(
+      8% 39%,
+      0 0,
+      100% 0,
+      100% 100%,
+      78% 93%,
+      68% 83%,
+      56% 88%,
+      42% 86%,
+      34% 76%,
+      19% 81%,
+      14% 65%,
+      4% 58%
+    );
+    background: #006c6e;
+  }
+}
